@@ -152,6 +152,8 @@ body {
 
 /* button */
 
+#more {display: none;}
+
 .button {
   display: inline-flex;
   cursor: pointer;
