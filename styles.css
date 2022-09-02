@@ -91,6 +91,15 @@ body {
   line-height: 1.5;
 }
 
+p{
+  opacity: 0.65;
+  max-width: 55ch;
+}
+
+p[data-width="wide"]{
+  max-width: 100%;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -129,6 +138,11 @@ svg {
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
+
+:where(.flow :not(:first-child)){
+  margin-top: var(--flow-spacer, 2em);
+}
+
 
 .even-columns {
   display: grid;
