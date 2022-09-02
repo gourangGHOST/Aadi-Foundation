@@ -156,6 +156,7 @@ body {
 
 .button {
   display: inline-flex;
+  margin-right: 35px;
   cursor: pointer;
   text-decoration: none;
   border: 0;
@@ -185,15 +186,19 @@ body {
   color: var(--clr-accent-300);
 }
 
-.logo{
-  cursor: pointer;
-  width: 100px;
-}
 
 /* navigation */
 
+.logo{
+  cursor: pointer;
+  width: 100px;
+  border-radius: 50px;
+}
+
+
 .primary-header{
-  padding: var(--size-700);
+  background-color: antiquewhite;
+  padding: var(--size-500);
 }
 
 .nav-wrapper{
@@ -225,6 +230,7 @@ body {
 .nav-list a:focus{
   color: var(--clr-accent-400);
 }
+
 
 @media(max-width: 50em) {
   .primary-navigation{
@@ -260,7 +266,7 @@ body {
   .mobile-nav-toggle{
     display: block;
     position: fixed;
-    top: var(--size-900);
+    top: var(--size-800);
     right: var(--size-600);
     cursor: pointer;
     background: transparent;

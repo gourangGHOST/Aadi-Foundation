@@ -1,3 +1,10 @@
+/* reload to top */
+window.onbeforeunload = function () {
+  window.scrollTo({
+    top: 0
+  });
+}
+
 const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
@@ -11,9 +18,9 @@ navToggle.addEventListener("click", () => {
 })
 
 function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("more");
+  const btnText = document.getElementById("myBtn");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
