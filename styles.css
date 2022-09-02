@@ -212,7 +212,7 @@ body {
 
 .primary-header{
   background-color: antiquewhite;
-  padding: var(--size-500);
+  padding: var(--size-600);
 }
 
 .nav-wrapper{
@@ -249,8 +249,11 @@ body {
 @media(max-width: 50em) {
   .primary-navigation{
     display: none;
+    z-index: 999;
 
     position: fixed;
+    max-width: 25rem;
+    margin-inline: auto;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     background: var(--clr-neutral-100);
