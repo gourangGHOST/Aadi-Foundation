@@ -306,6 +306,8 @@ body {
 
 /* numbered items */
 
+
+
 .numbered-items {
   counter-reset: count;
   width: fit-content;
@@ -388,13 +390,17 @@ body {
 .goals-title::after {
   content: '';
   display: block;
-  width: 7em;
+  width: 3em;
   height: 1.5px;
   margin: 0.2em auto 1em;
   background: black;
   opacity: 0.9;
 }
 
+.founder-name{
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .goal {
   max-width: 500px;
