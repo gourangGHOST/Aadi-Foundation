@@ -349,9 +349,9 @@ body {
   content: "0" counter(count);
   display: flex;
   align-items: center;
-  color: var(--clr-neutral-100);
+  color: black;
   font-weight: var(--fw-bold);
-  background-color: var(--clr-accent-400);
+  background-color: rgb(255, 221, 177);
   padding: 0 var(--size-500);
   border-radius: 100vw;
   grid-row: 1 / 2;
@@ -371,6 +371,106 @@ body {
     background: var(--bg);
   }
 }
+
+.my-goals {
+  background-color: antiquewhite;
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.goals-title {
+  padding-top: 50px;
+  color: black;
+  position: relative;
+}
+
+.goals-title::after {
+  content: '';
+  display: block;
+  width: 7em;
+  height: 1.5px;
+  margin: 0.2em auto 1em;
+  background: black;
+  opacity: 0.9;
+}
+
+
+.goal {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.goal p{
+  margin-bottom: 40px;
+}
+
+.goal img{
+  margin-bottom: 60px;
+}
+
+@media (min-width: 600px) {
+  .goals {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .goal+.goal {
+    margin-left: 4em;
+  }
+}
+
+
+
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  color: #f3c892;
+  background-color: #24252A;
+}
+.footer ul{
+  list-style: none;
+  size: 200px;
+}
+
+.footer-name{
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+#social-media a {
+  width: 2px;
+  padding: 10px;
+  font-size: 1.7rem;
+  color: #777;
+  transition: 0.3s;
+}
+
+#social-media a:hover {
+  color: #f3c892;
+}
+
+.so-media{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 2%;
+  opacity: 0.3;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+
+
 
 
 
